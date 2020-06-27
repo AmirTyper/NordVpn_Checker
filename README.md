@@ -18,7 +18,8 @@ Nord Vpn Cracker ProxyLess
 		 cd NordVpn_Checker
 		 python NordVpn_Checker.py
 		 
-#Contact:
-	Telegram: @Mr_Amir_Typer
-	Telegram Channel: @Sezar_Hack
+		 
+		 #Contact:
+			Telegram: @Mr_Amir_Typer
+				Telegram Channel: @Sezar_Hack
 		 
