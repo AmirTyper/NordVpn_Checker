@@ -80,9 +80,11 @@ def main():
         else:
             if "nginx" in login(combo):
                 last = open("last.sz","a")
+                last.truncate(0)
                 last.write(combo+"\n")
                 last.close()
-                openlast = open("last.sz","r").read() 
+                openlast = open("last.sz","r").read()
+                
                 print ("[[error: check your internet or change your ip and try again]]"+"\n")
                 if "name=" not in openlast:             
                     print("Last Combo: "+openlast)
@@ -92,7 +94,6 @@ def main():
                 return
             else:
                 print (combo+"  -----> Bad")
-    
 if __name__ == "__main__":
     main()
 
