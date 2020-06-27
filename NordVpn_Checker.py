@@ -1,6 +1,5 @@
 import requests
 import base64
-import urllib
 import re
 
 welcome = """
@@ -64,16 +63,22 @@ def main():
                             exp = "{group}".format(groupNum2 = groupNum2, start = match.start(groupNum2), end = match.end(groupNum2), group = match.group(groupNum2))
                             #print(exp)
                             
-            f = open("hit.txt", "a")
-            f.write(combo+"\n")
-            f.close()
-            print (combo+"  =====> Good | Date = " + exp)
+            try:
+
+                f = open("Good.txt", "a")
+                f.write(combo+"  -----> Good | Date = " + str(exp) + "\n")
+                f.close()
+                print (combo+"  -----> Good | Date = " + str(exp))
+            except:
+                print(combo+"  -----> Good | No Service")
+                f.write(combo+"  -----> Good | No Service" + "\n")
+                f.close()
         else:
             if "nginx" in login(combo):
                 print ("error: check your internet or change your ip and try again")
                 return
             else:   
-                print (combo+"  =====> Bad")
+                print (combo+"  -----> Bad")
         
 
 
@@ -82,3 +87,4 @@ if __name__ == "__main__":
 
 #1399/04/07
 #27/6/2020
+    
