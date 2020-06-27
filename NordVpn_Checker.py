@@ -81,11 +81,12 @@ def main():
         else:
             if "nginx" in login(combo):
                 last = open("last","a")
-                last.write(combo)
+                last.write(combo+"\n")
                 print ("error: check your internet or change your ip and try again")
                 if "name=" not in str(last):             
                     print("Last Combo: "+str(last))
                 else:
+                    print("Last Combo: "+str(last))
                     pass
                 last.close()
                 return
@@ -97,4 +98,3 @@ if __name__ == "__main__":
 
 #1399/04/07
 #27/6/2020
-
