@@ -29,7 +29,7 @@ def login(combo):
         f.close()
         return r.text
     except:
-        print ("[[error: check your internet or change your ip and try again]]"+"\n")
+        print ("\n[[error: check your internet or change your ip and try again]]"+"\n")
 x=""
 def main(): 
     list = open(input("ComboList: "), "r").read().splitlines()
@@ -85,7 +85,7 @@ def main():
                 last.close()
                 openlast = open("last.sz","r").read()
                 
-                print ("[[error: check your internet or change your ip and try again]]"+"\n")
+                print ("\n[[error: check your internet or change your ip and try again]]"+"\n")
                 if "name=" not in openlast:             
                     print("Last Combo: "+openlast)
                 else:
