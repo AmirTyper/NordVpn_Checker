@@ -7,12 +7,12 @@ This method is not working anymore. I hope you enjoyed it in the past 3 years.
 
 Nord Vpn Cracker ProxyLess
 
-(
-also you can see example.png
-		 )
+<br />
+<img src="example.png" />
+<br />
 		 
 		 
-		 How To Use:
+		 How To Install:
 		 pkg update
 		 pkg upgrade
 		 pkg install python
@@ -21,11 +21,12 @@ also you can see example.png
 		 pkg install re
 		 pkg install git
 		 
-		-- HOW TO RUN:
+		-- HOW TO Use:
 		 
 		 git clone https://github.com/Amirtyper/NordVpn_Checker.git
 		 cd NordVpn_Checker
 		 python NordVpn_Checker.py
+		 
 		 
 		 
 # Support me
